@@ -1,0 +1,24 @@
+print("Welcome to Treasure Isalnd ")
+print("your mission is to find the treasure !!! ")
+a1=input("choose among left or right ?\n")
+if a1=="left" or a1=="LEFT":
+    al1=input("choose among swim or wait ?\n")
+    if al1=="wait" or al1=="WAIT":
+        print("now you have to choose among the doors : --- FINAL STEP : ")
+        alw1=input("red, yellow, blue ?\n")
+        if alw1=="red" or "RED":
+            print("Burned by fire.\nGAME OVER.")
+        elif alw1=="yellow" or "YELLOW":
+            print("YOU WIN THE GAME !!!!")
+        elif alw1=="blue" or "BLUE":
+            print("eaten by beasts.\nGAME OVER.")
+        else :
+            print("GAME OVER")
+    elif al1=="swim" or al1=="SWIM":
+        print("attacked by trouts.\nGAME OVER")
+    else :
+        print("attacked by trouts.\nGAME OVER")
+elif a1=="right" or "RIGHT":
+    print("fall into a hole.\nGAME OVER")
+else :
+    print("fall into a hole.\nGAME OVER")
