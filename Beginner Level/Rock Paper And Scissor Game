@@ -1,0 +1,78 @@
+# rock paper and scissor game :
+import random
+scissors = '''
+    __________
+ __'    ______)_____
+     ________________)___
+     ____________________)
+     (_____)
+   __(___)
+
+'''
+
+paper ='''
+    ___________
+ __'    _______)_____
+     _________________)
+     ___________________)
+___     ___________)
+   '________)
+
+'''
+
+rock='''
+   __________
+ __'    _____)
+     (______)
+     (______)
+__   (_____)
+  ' __(___)
+
+'''
+print("welcome to rock paper and scissor game : ")
+computer=["rock","paper","scissor"]
+a=input("tell me the choice you want to do ?\n")
+if a=="rock":
+    print("your choise is rock")
+    print(rock)
+if a=="scissors":
+    print("your choise is scissor")
+    print(scissors)
+if a=="paper":
+    print("your choise is paper")
+    print(paper)
+b=random.choice(computer)
+if b=="rock":
+    print("computer choise is rock")
+    print(rock)
+if b=="scissors":
+    print("computer choise is scissor")
+    print(scissors)
+if b=="paper":
+    print("computer choise is paper")
+    print(paper)
+
+## checking :
+if a=="scissors":
+    if b=="scissors":
+        print("TIE MATCH")
+    elif b=="paper":
+        print("YOU WON THE MATCH")
+    else :
+        print("YOU LOOSE THE MATCH")
+
+if a=="rock":
+    if b=="rock":
+        print("TIE MATCH")
+    elif b=="paper":
+        print("YOU WON THE MATCH")
+    else :
+        print("YOU LOOSE THE MATCH")
+
+if a=="paper":
+    if b=="paper":
+        print("TIE MATCH")
+    elif b=="rock":
+        print("YOU WON THE MATCH")
+    else :
+        print("YOU LOOSE THE MATCH")
