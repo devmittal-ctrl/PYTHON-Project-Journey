@@ -1,6 +1,10 @@
 # PYTHON-Project-Journey
 A collection of Python projects developed from beginner to advanced level, covering programming fundamentals, automation, APIs, data analysis, OOP, databases, and AI/ML.
 
+## Mentor / Instructor
+
+**Dr. Angela Yu**  
+Developer and Lead Instructor
 
 # Python Projects: Beginner to Advanced
 
@@ -30,8 +34,9 @@ Projects focused on learning Python fundamentals.
 | Treasure Island          | Nested conditionals                |
 | Password Generator       | Loops, strings, random             |
 | Bidding Game             | Lists, dictionaries, functions     |
-| Student Grade Calculator | Conditions, functions              |
-| Expense Tracker          | Lists, dictionaries, file handling |
+| Hang Man Game            | Conditions, functions              |
+| Higher Lower             | Lists, dictionaries                |
+| Black Jack Capstone Work | Lists, dictionaries                |
 
 ### 02. Intermediate
 
