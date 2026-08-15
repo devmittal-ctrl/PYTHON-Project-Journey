@@ -24,12 +24,12 @@ Projects focused on learning Python fundamentals.
 
 | Project                  | Concepts                           |
 | ------------------------ | ---------------------------------- |
-| Calculator               | Variables, operators, functions    |
+| Reeborg's Maze Problem   | Variables, operators, functions    |
 | Number Guessing Game     | Loops, conditionals                |
 | Rock Paper Scissors      | Conditionals, random module        |
 | Treasure Island          | Nested conditionals                |
 | Password Generator       | Loops, strings, random             |
-| Quiz Game                | Lists, dictionaries, functions     |
+| Bidding Game             | Lists, dictionaries, functions     |
 | Student Grade Calculator | Conditions, functions              |
 | Expense Tracker          | Lists, dictionaries, file handling |
 
@@ -96,16 +96,16 @@ Through these projects, I am working on:
 ## Progress
 
 * [x] Python fundamentals
-* [ ] Beginner projects
+* [x] Beginner projects
 * [ ] Intermediate projects
 * [ ] Advanced projects
 * [ ] Machine learning projects
 * [ ] AI projects
 * [ ] Full-stack Python project
 
-## Author
+## Author / Coder
 
-**Dev Mittal**
+***Dev Mittal***
 
 B.Tech CSE | AI & ML
 
