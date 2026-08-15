@@ -1,0 +1,39 @@
+# biding programme : 
+hammer=""" 
+             _____________
+            |             |
+            |    BIDDING  |
+            |    HAMMER   |
+            |_____________|
+                  ||
+                  ||
+                  ||
+                  ||
+                  ||
+                 /  \\
+                /____\\
+
+"""
+print(hammer)
+def find_highest(bids_listing):
+    winner=""
+    maximun_bid=0
+    for i in bids_listing:
+        amount=bids_listing[i]
+        if maximun_bid<amount:
+            maximun_bid=amount
+            winner=i
+    print(f"the maximum bid is made by {winner} of {maximun_bid} $")
+print("WELCOME TO THE PY BIDDING GAME")
+bids_list={}
+end=True
+while end==True:
+    a=input("tell me your name :\n")
+    f=int(input("tell me the amount of the bid :\n"))
+    bids_list[a]=f
+    s=input("type yes for another person entry:\n").lower()
+    if s=="no":
+        break
+    else :
+        print("\n" *1000)
+find_highest(bids_list)
