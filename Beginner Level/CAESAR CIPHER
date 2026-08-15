@@ -1,0 +1,61 @@
+print("""
+ ██████╗  █████╗ ███████╗███████╗ █████╗ ██████╗ 
+██╔════╝ ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔══██╗
+██║      ███████║█████╗  ███████╗███████║██████╔╝
+██║      ██╔══██║██╔══╝  ╚════██║██╔══██║██╔══██╗
+╚██████╗ ██║  ██║███████╗███████║██║  ██║██║  ██║
+ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+ ██████╗██╗██████╗ ██╗  ██╗███████╗██████╗ 
+██╔════╝██║██╔══██╗██║  ██║██╔════╝██╔══██╗
+██║     ██║██████╔╝███████║█████╗  ██████╔╝
+██║     ██║██╔═══╝ ██╔══██║██╔══╝  ██╔══██╗
+╚██████╗██║██║     ██║  ██║██╗██║  ██║
+ ╚═════╝╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+""")
+print("welcome to caeser cyphre!!!!!")
+# defing the function to do the encoding part 
+def repeat():
+    def encode(a,b):
+        print("encoding your text ........................")
+        cypher_text=""
+        for letter in a:
+            if letter not in aplhabet:
+                cypher_text+=letter
+            else :
+                shift_letter=aplhabet.index(letter)+b
+                cypher_text+=aplhabet[shift_letter%len(aplhabet)]
+        print("your text is encodded sussessfully.....")
+        print("the encodded text is : "+cypher_text)
+# defing the decoding part to do 
+    def decode(a,b):
+        print("decoding your text .....................")
+        decypher_text=""
+        for letters in a:
+            if letters not in aplhabet:
+                decypher_text+=letters
+            else :
+                shift_number=aplhabet.index(letters)-b
+                decypher_text+=aplhabet[shift_number]
+        print("your text is decoded sussessfully.....")
+        print("the decodeed text is : "+decypher_text)
+
+# defing some variables for the prorgamme
+    aplhabet=["a","b","c","d","e","f","g","h","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    direction=input("Type 'encode' to encrpty and decode to 'decript' the code\n").lower()
+    text_meg=input("type your message : \n").lower()
+    shift=int(input("tell me the number of the shift you want to take\n"))
+    if direction=="encode":
+        encode(text_meg,shift)
+    else: 
+        decode(text_meg,shift)
+
+# now i want to repeat the pattern for number of times
+a="True"
+while a=="True":
+    repeat()
+    a=input("type yes if you want to run the programme\n")
+    if a=="yes":
+        repeat()
+    else:
+        a="False"
