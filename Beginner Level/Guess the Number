@@ -1,0 +1,51 @@
+# number guessing game:
+title="""
+  ____                       _____ _          
+ / ___|_   _  ___  ___ ___  |_   _| |__   ___ 
+| |  _| | | |/ _ \/ __/ __|   | | | '_ \ / _ \\
+| |_| | |_| |  __/\__ \__ \   | | | | | |  __/
+ \____|\__,_|\___||___/___/   |_| |_| |_|\___|\n
+| \ | |_   _ _ __ ___ | |__   ___ _ __        
+|  \| | | | | '_ ` _ \| '_ \ / _ \ '__|       
+| |\  | |_| | | | | | | |_) |  __/ |          
+|_| \_|\__,_|_| |_| |_|_.__/ \___|_|          
+
+"""
+print(title)
+import random
+print("Welcome to Number Guessing Game ")
+print("I'm thinking of the number b/w 1 and 100\n")
+an=random.randint(1,100)
+b=input("Choose a difficulty.Type 'easy','hard': ").lower()
+print(f"you have chosed the {b} level")
+# defing the easy level function 
+def easy_level(an):
+    print("you have 10 guess to guess the number")
+    for i in range(1,11):
+        r=int(input("Make a Guess: "))
+        if r>an:
+            print("too high\nGuess Again")
+            print(f"Guess left : {1-i}")
+        elif r<an:
+            print("too low\nGuess Again")
+            print(f"Guess left : {10-i}")
+        else:
+            print("yes you got it")
+# defing the function for the hard level:
+def hard_level(an):
+    print("you have 5 guess to guess the number")
+    for i in range(1,6):
+        r=int(input("Make a Guess: "))
+        if r>an:
+            print("too high\nGuess Again")
+            print(f"Guess left : {5-i}")
+        elif r<an:
+            print("too low\nGuess Again")
+            print(f"Guess left : {5-i}")
+        else:
+            print("yes you got it")
+# now printing the values : 
+if b=="easy":
+    easy_level(an)
+else:
+    hard_level(an)
